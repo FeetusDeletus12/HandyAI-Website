@@ -4,10 +4,10 @@ async function getAIResponse() {
 
     responseElement.innerText = "Loading...";
 
-    const response = await fetch("https://api-inference.huggingface.co/models/YOUR_MODEL_NAME", {
+    const response = await fetch("https://api-inference.huggingface.co/models/braxtongough/HandyAI", {
         method: "POST",
         headers: {
-            "Authorization": "Bearer YOUR_HUGGINGFACE_API_KEY",
+            "Authorization": "Bearer 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",
             "Content-Type": "application/json"
         },
         body: JSON.stringify({ inputs: userInput })
